@@ -28,7 +28,7 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 * Have a file uploader on the contact sheet for people to upload designs they would like to see if I could make
 
 ## ERD
-**Login**
+**ERD**
 ![ERD](planning/erd/ERD.png)
 
 ## Wireframes

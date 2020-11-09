@@ -10,17 +10,12 @@ main {
 
 footer {
   bottom: 0;
-  background-color: grey;
   font-size: 20px;
   padding: 0 20px 0 20px;
 }
 
 body, #root, .App {
   min-height: 100vh;
-}
-
-header {
-  background-color: grey;
 }
 
 .footerBox {
