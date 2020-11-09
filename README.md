@@ -20,4 +20,6 @@
 
 ## Issues/Unsolved Problems
 
-#### Thank you for taking the time to read from/use my capstone project. This was an incredible test of my skills gain over the last 12 weeks.
+## Final Thoughts
+
+ Thank you for taking the time to read from/use my capstone project. This was an incredible test of my skills gain over the last 12 weeks.
