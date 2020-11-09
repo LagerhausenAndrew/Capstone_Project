@@ -18,6 +18,7 @@ This capstone project is going to be an E-Commerce website. I have a small side 
     * Auth/Login
     * Products
     * Individuals shopping carts
+* Have a file uploader on the contact sheet for people to upload designs they would like to see if I could make
 
 ## Stretch Goals
 * Add a backend database
@@ -26,7 +27,6 @@ This capstone project is going to be an E-Commerce website. I have a small side 
     * Add the ability to keep track of stock...
 * Have a submit questions button that will send an email to myself.
 * Add a Like button that allows users to upvote a product.
-* Have a file uploader on the contact sheet for people to upload designs they would like to see if I could make
 
 ## ERD
 **ERD**
