@@ -10,7 +10,7 @@ const Footer = (props) => {
                 <p>Andrew Lagerhausen</p>
             </div>
             <div className='socialMedia'>
-                <p>Facebook</p>
+                <a href='https://www.facebook.com/LagersLumberCreations'>Facebook</a>
             </div>
         </div>
     )
