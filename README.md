@@ -27,6 +27,8 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 * Add a Like button that allows users to upvote a product
 
 ## ERD
+**Login**
+![ERD](planning/erd/ERD.png)
 
 ## Wireframes
 **Homepage**
@@ -51,9 +53,9 @@ What do my users what?
 3. As a user I would like to be able to see reviews about the woodworker.
 4. As a user I would like to be able to contact the woodworker and ask further questions about style/price/new projects.
 5. As a user I would like to know if a product is in stock or out of stock.
-6. 
-7. 
-8. 
+6. As a user I would like to see what have been the woodworkers favorite building pieces.
+7. As a user I would like to be able to see what's in my shopping cart before submitting.
+8. As a user I would like to be able to edit my shopping cart before submitting.
 9. As a user I would like to be able to select items I would like created and submitted to the woodworker.
 10. As a user I would like to visit a pleseant and appealing website with simple navigation.
 
