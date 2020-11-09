@@ -7,7 +7,7 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 * Create a React-App for my E-Commerce Woodworking site.
 * Create Links/Routes to navigate my webpage.
     * Have a products view page
-    * Have a reviews page on each products
+    * Link to submit questions/comments
 * Create auth (for login features)
 * Create a shopping cart feature
     * Allow logged in users to add items to their cart.
@@ -15,9 +15,13 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 * Have a submit questions button that will send an email to myself.
 * Add a syling library
 * Add a backend database
+    * Auth/Login
+    * Individuals shopping carts
 
 ## Stretch Goals
-
+* Add a backend database
+    * Add reviews for products
+    * Add reviews for the creator
 ## ERD
 
 ## Wireframes
@@ -37,7 +41,7 @@ What do my users what?
 7. 
 8. 
 9. 
-10. 
+10. As a user I would like to be able to select items I would like created and submitted to the create.
 
 ## Code Snippets
 
