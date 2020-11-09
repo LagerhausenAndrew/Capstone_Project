@@ -23,6 +23,11 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 ## Wireframes
 
 ## User Stories
+Who are your users?
+* People who are looking for wood home decor/yard games.
+What do my users what?
+* To have their creative decor/game ideas brought to fruition.
+
 1. As a user I would like to be able to search what products have been made before.
 2. As a user I would like to be able to see reviews about each product that has been made before.
 3. 
