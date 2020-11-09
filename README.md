@@ -12,16 +12,9 @@
 ## Wireframes
 
 ## User Stories
-1. Hey
-2. yes
-3. No
-4. four
-5. five
-6. six
-7. seven
-8. eight
-9. nine
-10. ten
+1. Item 1
+1. Item 2
+1. Item 3
 
 ## Code Snippets
 
