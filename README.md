@@ -13,6 +13,7 @@ This capstone project is going to be an E-Commerce website. I have a small side 
     * Allow logged in users to add items to their cart.
     * Upon 'Checkout' allow users to submit their 'order' to my email & send the user a confirmation email.
 * Add a syling library
+    * Evergreen UI...?
 * Add a backend database
     * Auth/Login
     * Products
