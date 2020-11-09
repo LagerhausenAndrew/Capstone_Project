@@ -31,7 +31,7 @@ Homepage
 ![Products](planning/wireframes/Products_page.png)
 ![Blog](planning/wireframes/Blog_page.png)
 ![Contact](planning/wireframes/Contact_page.png)
-![Login](planning/wireframes/New:Exisiting_User_page.png)
+![Login](planning/wireframes/Login.png)
 
 ## User Stories
 Who are your users?
