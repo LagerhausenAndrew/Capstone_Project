@@ -10,7 +10,7 @@ import ContactPageContainer from './contact_page_container';
 
 const OverallContainer = (props) => {
   return (
-    <div>
+    <div className='contentBlock'>
         <Route exact path="/" render={() => <HomepageContainer />} />
         <Route path="/products" render={() => <ProductPageContainer />} />
         <Route path="/blog" render={() => <BlogPageContainer />} />

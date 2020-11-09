@@ -11,7 +11,7 @@ main {
 footer {
   bottom: 0;
   font-size: 20px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 20px 20px;
 }
 
 body, #root, .App {
@@ -22,4 +22,30 @@ body, #root, .App {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
+}
+
+.tabs {
+  text-decoration: none;
+}
+
+.mainHeader {
+  font-size: 80px;
+  padding: 0 0 15px 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35px;
+}
+
+.contentBlock {
+  margin: 10px 20px 10px 20px;
+  display: flex;
+  overflow: scroll;
+  height: 70vh;
+  width: 100vw;
+  padding: 0 15px;
+  border: 10px solid black;
 }
