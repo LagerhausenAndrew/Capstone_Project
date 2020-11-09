@@ -12,19 +12,21 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 * Create a shopping cart feature
     * Allow logged in users to add items to their cart.
     * Upon 'Checkout' allow users to submit their 'order' to my email & send the user a confirmation email.
-* Have a submit questions button that will send an email to myself.
 * Add a syling library
 * Add a backend database
     * Auth/Login
+    * Products
     * Individuals shopping carts
 
 ## Stretch Goals
 * Add a backend database
     * Add reviews for products
     * Add reviews for the creator
+* Have a submit questions button that will send an email to myself.
 ## ERD
 
 ## Wireframes
+![Homepage](planning/wireframes/Homepage.png)
 
 ## User Stories
 Who are your users?
