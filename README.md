@@ -22,15 +22,22 @@ This capstone project is going to be an E-Commerce website. I have a small side 
 * Add a backend database
     * Add reviews for products
     * Add reviews for the creator
+    * Add the ability to keep track of stock...
 * Have a submit questions button that will send an email to myself.
+* Add a Like button that allows users to upvote a product
+
 ## ERD
 
 ## Wireframes
-Homepage
+**Homepage**
 ![Homepage](planning/wireframes/Homepage.png)
+**Products**
 ![Products](planning/wireframes/Products_page.png)
+**Blog**
 ![Blog](planning/wireframes/Blog_page.png)
+**Contact**
 ![Contact](planning/wireframes/Contact_page.png)
+**Login**
 ![Login](planning/wireframes/Login.png)
 
 ## User Stories
@@ -41,14 +48,14 @@ What do my users what?
 
 1. As a user I would like to be able to search what products have been made before.
 2. As a user I would like to be able to see reviews about each product that has been made before.
-3. 
-4. 
-5. 
+3. As a user I would like to be able to see reviews about the woodworker.
+4. As a user I would like to be able to contact the woodworker and ask further questions about style/price/new projects.
+5. As a user I would like to know if a product is in stock or out of stock.
 6. 
 7. 
 8. 
-9. 
-10. As a user I would like to be able to select items I would like created and submitted to the create.
+9. As a user I would like to be able to select items I would like created and submitted to the woodworker.
+10. As a user I would like to visit a pleseant and appealing website with simple navigation.
 
 ## Code Snippets
 
