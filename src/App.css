@@ -21,20 +21,22 @@ main {
 
 .mainHeader {
   font-size: 80px;
-  padding: 0 0 15px 0;
+  font-family: 'Marck Script', cursive;
 }
 
 .contentBlock {
-  display: flex;
   overflow: scroll;
   margin: 10px;
-  height: 73vh;
+  height: 70vh;
   padding: 5px;
   border: 5px solid black;
 }
 
 .homePageContent {
-  display: flex;;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Josefin Slab', serif;
+  padding: 10px;
 }
 
 .homePageText {
@@ -62,16 +64,19 @@ li {
 
 .favoriteProjects {
   display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  font-family: 'Josefin Slab', serif;
 }
 
 .favProjectImage {
   max-width: 350px;
-  max-height: 500px;
 }
 
 .info {
   text-align: right;
-  margin: auto;
 }
 
 .contactForm {
@@ -83,6 +88,20 @@ li {
   border: 5px solid black;
   border-radius: 5px;
   background-color: lightgrey;
-  height: 350px;
+  height: 40vh;
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+}
+
+.favCustHead {
+  font-size: 50px;
+}
+
+.favCustText {
+  font-size: 25px;
+}
+
+.profileImage {
   padding: 10px;
 }

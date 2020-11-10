@@ -5,7 +5,7 @@ const ContactPage = (props) => {
     return(
         <div className="contactFormContainer">
             <h1>Contact Form</h1>
-            <form className="contactForm">
+            <form className="contactForm" action="mailto:lagerhausen.3@gmail.com">
                 Full Name:
                 <TextInput
                     name="name"
@@ -20,6 +20,11 @@ const ContactPage = (props) => {
                 <TextInput
                     name="name"
                     placeholder="Phone Number"
+                />
+                Questions/Comments:
+                <TextInput
+                    name="comment"
+                    placeholder="What can I help you with?"
                 />
                 Upload File:
                 <FilePicker

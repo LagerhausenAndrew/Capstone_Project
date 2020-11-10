@@ -8,9 +8,9 @@ const BlogPage = (props) => {
                     <img className='favProjectImage' src={props.favoriteProducts.imageSRC} />
                 </div>
                 <div className='info'>
-                    <h1>{props.favoriteProducts.name}</h1>
+                    <h1 className='favCustHead'>{props.favoriteProducts.name}</h1>
                     <p>{props.favoriteProducts.date}</p>
-                    <p>{props.favoriteProducts.description}</p>
+                    <p className='favCustText'>{props.favoriteProducts.description}</p>
                 </div>
             </div>
         </div>
