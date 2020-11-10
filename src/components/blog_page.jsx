@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text, Heading } from 'evergreen-ui';
 
 const BlogPage = (props) => {
     return(
@@ -12,9 +11,9 @@ const BlogPage = (props) => {
                     <img className='favProjectImage' src='/blog_corn_hole.jpeg' />
                 </div>
                 <div className='info'>
-                    <Heading size={900} marginTop="default">'Gold Standard' Corn Hole Boards</Heading>
-                    <Text size={300}>September 12th, 2020</Text><br></br>
-                    <Text size={500}>This was my first custom ordered piece I created.</Text>
+                    <h1>'Gold Standard' Corn Hole Boards</h1>
+                    <p>September 12th, 2020</p>
+                    <p>This was my first custom ordered piece I created.</p>
                 </div>
             </div>
         </div>
