@@ -23,7 +23,13 @@ class App extends Component {
           imageSRC: "/blog_bench.jpg",
           date: "October 16th, 2020",
           description: "This was a fun bench to create. Staining not so much, but turned out kind of neat. It was created for a friend, who also is the owner of a small business. She wanted a colorful bench to put in her rock garden at her house. The frame is made from quality pine wood, with individual stained pine boards on the top. This piece then had a thick layer of polyurethane to ensure color and quaility protection while sitting in nature."
-          }
+          },
+          {
+            name: "Illinois Outline",
+            imageSRC: "/blog_illinois.jpg",
+            date: "October 30th, 2020",
+            description: "Hail to the Orange, Hail to the Blue. Hail Alma Mater, Ever so true! We love no other, So let our motto be, Victory! Illinois Varsity! This was just a project I worked on in honor to my Alma Mater Illinois."
+            }
       ]
     }
   }
