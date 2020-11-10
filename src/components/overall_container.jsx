@@ -13,7 +13,7 @@ const OverallContainer = (props) => {
     <div className='contentBlock'>
         <Route exact path="/" render={() => <HomePage />} />
         <Route path="/products" render={() => <ProductPageContainer />} />
-        <Route path="/blog" render={() => <BlogPageContainer />} />
+        <Route path="/blog" render={() => <BlogPageContainer favoriteProducts={props.favoriteProducts}/>} />
         <Route path="/contact" render={() => <ContactPage />} />
         <Route path="/user" render={() => <UserPageContainer />} />
     </div>
