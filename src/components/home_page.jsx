@@ -3,28 +3,21 @@ import React from 'react';
 const HomePage = (props) => {
     return(
         <div className='homePageContent'>
-            <div className='aboutMeSection'>
-                <div className='aboutMeTitle'>
+            <div className='profileImage'>
+                <img src='/profile_image.jpg' />
+            </div>
+            <div className='homePageText'>
+                <div className='aboutMeSection'>
                     <h3>About Me</h3>
-                </div>
-                <div className='aboutMeContent'>
                     <p>Hello, Thank you for coming to my website.</p>
                 </div>
-            </div>
-            <div className='favoriteProjectSection'>
-                <div className='favoriteProjectTitle'>
+                <div className='favoriteProjectSection'>
                     <h3>Favorite Project</h3>
-                </div>
-                <div className='favoriteProjectContent'>
                     <p>Hello, Thank you for coming to my website.</p>
                 </div>
-            </div>
-            <div className='goalsSection'>
-                <div className='goalsTitle'>
+                <div className='goalsSection'>
                     <h3>Goals/Aspirations</h3>
-                </div>
-                <div className='goalsContent'>
-                    <p>Hello, Thank you for <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>coming to my website.</p>
+                    <p>Hello, Thank you for coming to my website.</p>
                 </div>
             </div>
         </div>

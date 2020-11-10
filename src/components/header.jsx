@@ -9,11 +9,13 @@ const Header = (props) => {
                 Lager's Lumber Creations
             </header>
             <nav className='navBar'>
-                    <Link className='tabs' to='/'><Button text-align="center" height={60} width={200} appearance="primary">Home</Button></Link>
-                    <Link className='tabs' to='/products'><Button height={60} width={200} appearance="primary">Products</Button></Link>
-                    <Link className='tabs' to='/blog'><Button height={60} width={200} appearance="primary">Blog</Button></Link>
-                    <Link className='tabs' to='/contact'><Button height={60} width={200} appearance="primary">Contact</Button></Link>
-                    <Link className='tabs' to='/user'><Button height={60} width={200} appearance="primary">Login</Button></Link>
+                <ul>
+                    <li><Link className='tabs' to='/'>Home</Link></li>
+                    <li><Link className='tabs' to='/products'>Products</Link></li>
+                    <li><Link className='tabs' to='/blog'>Blog</Link></li>
+                    <li><Link className='tabs' to='/contact'>Contact</Link></li>
+                    <li><Link className='tabs' to='/user'>Login</Link></li>
+                </ul>
             </nav>
         </div>
     )
