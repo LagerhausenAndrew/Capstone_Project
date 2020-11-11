@@ -1,11 +1,11 @@
 import React from 'react';
-import { TextInput, FilePicker, Button } from 'evergreen-ui';
+import { TextInput, FilePicker, Button, FormField } from 'evergreen-ui';
 
 const ContactPage = (props) => {
     return(
         <div className="contactFormContainer">
             <h1>Contact Form</h1>
-            <form className="contactForm" action="mailto:lagerhausen.3@gmail.com">
+            <FormField className="contactForm" action="mailto:lagerhausen.3@gmail.com">
                 Full Name:
                 <TextInput
                     name="name"
@@ -35,7 +35,7 @@ const ContactPage = (props) => {
                     placeholder="Select the file here!"
                 />
                 <Button appearance="primary">Submit</Button>
-            </form>
+            </FormField>
         </div>
     )
 }

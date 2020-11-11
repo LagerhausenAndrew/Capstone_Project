@@ -93,12 +93,10 @@ li {
 }
 
 .contactFormContainer {
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: lightgrey;
-  height: 40vh;
-  width: 300px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: auto;
   text-align: left;
 }
 
@@ -112,4 +110,20 @@ li {
 
 .profileImage {
   padding: 10px;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: auto;
+  text-align: left;
+}
+
+.submit {
+  width: 100px;
+}
+
+input {
+  margin-bottom: 10px;
 }

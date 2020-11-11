@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Route, withRouter } from 'react-router-dom';
 
 // Components
 import Header from './components/header';
 import Footer from './components/footer';
 import OverallContainer from './components/overall_container';
 
+import { registerUser, loginUser, verifyUser} from './services/api_helper'
+
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      currentUser: null,
       favoriteProducts: [
         {
           name: "'Gold Standard' Corn Hole Boards",
@@ -33,14 +37,49 @@ class App extends Component {
       ]
     }
   }
+
+  handleSignUp = async (e, registerData) => {
+    e.preventDefault();
+    const currentUser = await registerUser(registerData);
+    this.setState({ currentUser });
+  }
+
+  handleLogin = async (e, loginData) => {
+    e.preventDefault();
+    const currentUser = await loginUser(loginData);
+    this.setState({ currentUser });
+    this.props.history.push('/user')
+  }
+
+  handleVerify = async () => {
+    const currentUser = await verifyUser();
+    if (currentUser) {
+      this.setState({ currentUser });
+    }
+  }
+
+  handleLogOut = async (e, currentUser) => {
+    localStorage.removeItem('authToken');
+    currentUser=this.state.currentUser;
+    this.setState({ currentUser: null })
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Header/>
+          <Header
+            currentUser={this.state.currentUser} 
+          />
         </header>
         <main>
-          <OverallContainer favoriteProducts={this.state.favoriteProducts}/>
+          <OverallContainer 
+            favoriteProducts={this.state.favoriteProducts}
+            currentUser={this.state.currentUser} 
+            handleSignUp={this.handleSignUp}
+            handleLogOut={this.handleLogOut}
+            handleLogin={this.handleLogin}
+          />
         </main>
         <footer>
           <Footer/>
@@ -50,4 +89,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
