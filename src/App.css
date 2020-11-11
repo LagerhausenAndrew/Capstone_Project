@@ -3,13 +3,13 @@
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
+  background-image: url(https://assets.weimgs.com/weimgs/ab/images/wcm/products/202040/0111/dark-walnut-square-bistro-table-c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
   flex-grow: 1;
-  background-image: url(https://assets.weimgs.com/weimgs/ab/images/wcm/products/202040/0111/dark-walnut-square-bistro-table-c.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .footerBox {
@@ -19,15 +19,17 @@ main {
   padding: 0 10px;
   font-size: 20px;
   bottom: 0;
-  background-color: lightgray;
+  color: white;
+}
+
+.socialMediaTag {
+  text-decoration: none;
+  color: white
 }
 
 .mainHeader {
   font-size: 80px;
   font-family: 'Marck Script', cursive;
-  background-image: url(https://assets.weimgs.com/weimgs/ab/images/wcm/products/202040/0111/dark-walnut-square-bistro-table-c.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
 }
 
@@ -57,7 +59,6 @@ main {
   align-items: center;
   height: 50px;
   font-size: 35px;
-  background-color: lightgray;
 }
 
 ul {
@@ -95,7 +96,7 @@ li {
 .contactFormContainer {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   margin: auto;
   text-align: left;
 }
@@ -115,7 +116,7 @@ li {
 .signUpForm {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   margin: auto;
   text-align: left;
 }
@@ -126,4 +127,12 @@ li {
 
 input {
   margin-bottom: 10px;
+}
+
+.button {
+  width: 80px;
+}
+
+.link {
+  text-decoration: none;
 }

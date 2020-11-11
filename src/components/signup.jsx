@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { TextInput, Button } from 'evergreen-ui';
+import { TextInput, Button, FormField } from 'evergreen-ui';
 
 class SignUpPage extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class SignUpPage extends Component {
             <h1>
                 Sign Up!
             </h1>
-            <form className="signUpForm" onSubmit={(e) => this.props.handleSignUp(e, this.state)}>
+            <FormField className="signUpForm" onSubmit={(e) => this.props.handleSignUp(e, this.state)}>
                 Name:
                 <TextInput
                     type="text"
@@ -60,8 +60,9 @@ class SignUpPage extends Component {
                     value={this.state.password}
                     onChange={this.handleChange}
                 />
-                <Button appearance="primary">Sign Up</Button>
-            </form>
+                <Button className='button' appearance="primary">Sign Up</Button>
+            </FormField>
+            <br></br>
             <Link to='/login'>Already a user? Log In!</Link>
         </div>
     )
