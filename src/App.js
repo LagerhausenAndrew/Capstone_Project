@@ -41,6 +41,7 @@ class App extends Component {
     e.preventDefault();
     const currentUser = await registerUser(registerData);
     console.log(currentUser)
+    this.setState({ currentUser });
   }
 
   handleLogin = async (e, loginData) => {
@@ -68,7 +69,7 @@ class App extends Component {
           <Header/>
         </header>
         <main>
-          <OverallContainer favoriteProducts={this.state.favoriteProducts}/>
+          <OverallContainer favoriteProducts={this.state.favoriteProducts} handleSignUp={this.handleSignUp}/>
         </main>
         <footer>
           <Footer/>

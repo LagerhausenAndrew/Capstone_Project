@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { TextInput, FormField } from 'evergreen-ui';
 
 class SignUpPage extends Component {
   constructor(props) {
@@ -22,9 +21,9 @@ class SignUpPage extends Component {
 
   render() {
     return(
-    <FormField className="signUpForm" onSubmit={(e) => this.props.handleSignUp(e, this.state)}>
+    <form className="signUpForm" onSubmit={(e) => this.props.handleSignUp(e, this.state)}>
         Name:
-        <TextInput
+        <input
           type="text"
           name="name"
           placeholder="Name"
@@ -32,7 +31,7 @@ class SignUpPage extends Component {
           onChange={this.handleChange}
         />
         Email:
-        <TextInput
+        <input
           type="text"
           name="email"
           placeholder="Email"
@@ -40,7 +39,7 @@ class SignUpPage extends Component {
           onChange={this.handleChange}
         />
         Username:
-        <TextInput
+        <input
           type="text"
           name="username"
           placeholder="Username"
@@ -48,7 +47,7 @@ class SignUpPage extends Component {
           onChange={this.handleChange}
         />
         Password:
-        <TextInput
+        <input
           type="password"
           name="password"
           placeholder="Password"
@@ -56,7 +55,7 @@ class SignUpPage extends Component {
           onChange={this.handleChange}
         />
         <input className="submit" type="submit" value="Sign Up" />
-    </FormField>
+    </form>
     )
   }
 }

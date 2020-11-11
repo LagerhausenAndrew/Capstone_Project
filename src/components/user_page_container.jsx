@@ -4,7 +4,7 @@ import SignUpPage from './signup';
 const UserPageContainer = (props) => {
     return(
         <div>
-            <SignUpPage/>
+            <SignUpPage handleSignUp={props.handleSignUp}/>
         </div>
     )
 }
