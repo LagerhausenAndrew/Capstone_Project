@@ -6,11 +6,14 @@ import Header from './components/header';
 import Footer from './components/footer';
 import OverallContainer from './components/overall_container';
 
+import { registerUser, loginUser, verifyUser} from './services/api_helper'
+
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      currentUser: null,
       favoriteProducts: [
         {
           name: "'Gold Standard' Corn Hole Boards",
@@ -33,6 +36,31 @@ class App extends Component {
       ]
     }
   }
+
+  handleSignUp = async (e, registerData) => {
+    e.preventDefault();
+    const currentUser = await registerUser(registerData);
+    console.log(currentUser)
+  }
+
+  handleLogin = async (e, loginData) => {
+    e.preventDefault();
+    const currentUser = await loginUser(loginData);
+    console.log(currentUser)
+  }
+
+  handleVerify = async () => {
+    const currentUser = await verifyUser();
+    if (currentUser) {
+      this.setState({ currentUser });
+    }
+  }
+
+  handleLogOut = () => {
+    localStorage.removeItem('authToken');
+    this.setState({ currentUser: null })
+  }
+
   render() {
     return (
       <div className="App">

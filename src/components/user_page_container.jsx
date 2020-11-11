@@ -1,10 +1,10 @@
 import React from 'react';
-import UserPage from './user_page';
+import SignUpPage from './signup';
 
 const UserPageContainer = (props) => {
     return(
         <div>
-            <UserPage/>
+            <SignUpPage/>
         </div>
     )
 }
