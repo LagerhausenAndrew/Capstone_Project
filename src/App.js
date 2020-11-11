@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Route, withRouter } from 'react-router-dom';
 
 // Components
 import Header from './components/header';
@@ -40,14 +41,14 @@ class App extends Component {
   handleSignUp = async (e, registerData) => {
     e.preventDefault();
     const currentUser = await registerUser(registerData);
-    console.log(currentUser)
     this.setState({ currentUser });
   }
 
   handleLogin = async (e, loginData) => {
     e.preventDefault();
     const currentUser = await loginUser(loginData);
-    console.log(currentUser)
+    this.setState({ currentUser });
+    this.props.history.push('/user')
   }
 
   handleVerify = async () => {
@@ -57,8 +58,9 @@ class App extends Component {
     }
   }
 
-  handleLogOut = () => {
+  handleLogOut = async (e, currentUser) => {
     localStorage.removeItem('authToken');
+    currentUser=this.state.currentUser;
     this.setState({ currentUser: null })
   }
 
@@ -66,10 +68,18 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Header/>
+          <Header
+            currentUser={this.state.currentUser} 
+          />
         </header>
         <main>
-          <OverallContainer favoriteProducts={this.state.favoriteProducts} handleSignUp={this.handleSignUp}/>
+          <OverallContainer 
+            favoriteProducts={this.state.favoriteProducts}
+            currentUser={this.state.currentUser} 
+            handleSignUp={this.handleSignUp}
+            handleLogOut={this.handleLogOut}
+            handleLogin={this.handleLogin}
+          />
         </main>
         <footer>
           <Footer/>
@@ -79,4 +89,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

@@ -2,17 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { TextInput, Button } from 'evergreen-ui';
 
-class SignUpPage extends Component {
+class LoginPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        name: "",
-        email: "",
-        username: "",
-        password: ""
+      username: "",
+      password: ""
     }
   }
-
   handleChange = (e) => {
     const { name, value } = e.target;
     // aka const name = e.target.name; const value = e.target.value;
@@ -20,31 +17,13 @@ class SignUpPage extends Component {
       [name]: value
     })
   }
-
   render() {
-    return(
+    return (
         <div>
             <h1>
-                Sign Up!
+                Log In!
             </h1>
-            <form className="signUpForm" onSubmit={(e) => this.props.handleSignUp(e, this.state)}>
-                Name:
-                <TextInput
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                />
-                Email:
-                <TextInput
-                    type="text"
-                    name="email"
-                    placeholder="Email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
-                />
-                Username:
+            <form onSubmit={(e) => this.props.handleLogin(e, this.state)}>
                 <TextInput
                     type="text"
                     name="username"
@@ -52,7 +31,6 @@ class SignUpPage extends Component {
                     value={this.state.username}
                     onChange={this.handleChange}
                 />
-                Password:
                 <TextInput
                     type="password"
                     name="password"
@@ -60,12 +38,12 @@ class SignUpPage extends Component {
                     value={this.state.password}
                     onChange={this.handleChange}
                 />
-                <Button appearance="primary">Sign Up</Button>
+                <Button appearance="primary">Log In</Button>
             </form>
-            <Link to='/login'>Already a user? Log In!</Link>
+            <Link to='/user'>Need an account? Sign Up!</Link>
         </div>
     )
   }
 }
 
-export default SignUpPage;
+export default LoginPage;

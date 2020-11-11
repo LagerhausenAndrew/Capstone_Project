@@ -93,12 +93,10 @@ li {
 }
 
 .contactFormContainer {
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: lightgrey;
-  height: 42vh;
-  width: 300px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: auto;
   text-align: left;
 }
 
@@ -117,13 +115,15 @@ li {
 .signUpForm {
   display: flex;
   flex-direction: column;
+  width: 25vw;
+  margin: auto;
   text-align: left;
-  width: 300px;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: lightgrey;
 }
 
 .submit {
   width: 100px;
+}
+
+input {
+  margin-bottom: 10px;
 }
