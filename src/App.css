@@ -53,22 +53,30 @@ main {
   text-align: right;
 }
 
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .navBar {
   display: flex;
-  justify-content: space-evenly;
+  padding: 2px 20px;
   align-items: center;
   height: 50px;
   font-size: 35px;
 }
 
-ul {
+.list {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
 }
 
 li {
   list-style: none;
   cursor: pointer;
-  margin: 75px;
 }
 
 .favoriteProjects {
@@ -135,4 +143,11 @@ input {
 
 .link {
   text-decoration: none;
+}
+
+.shoppingCart {
+  border: 3px solid black;
+  width: 20vw;
+  text-align: left;
+  padding: 0 10px;
 }

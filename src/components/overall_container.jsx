@@ -13,7 +13,7 @@ const OverallContainer = (props) => {
   return (
     <div className='contentBlock'>
         <Route exact path="/" render={() => <HomePage />} />
-        <Route path="/products" render={() => <ProductPageContainer />} />
+        <Route path="/products" render={() => <ProductPageContainer currentUser={props.currentUser}/>} />
         <Route path="/blog" render={() => <BlogPageContainer favoriteProducts={props.favoriteProducts} />} />
         <Route path="/contact" render={() => <ContactPage />} />
         <Route path="/user" render={() => <UserPageContainer handleLogOut={props.handleLogOut} handleSignUp={props.handleSignUp} currentUser={props.currentUser}/>} />

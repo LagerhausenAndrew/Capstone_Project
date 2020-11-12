@@ -9,7 +9,7 @@ const HomePage = (props) => {
             <div className='homePageText'>
                 <div className='aboutMeSection'>
                     <h2 className='favCustHead'>About Me</h2>
-                    <p className='favCustText'>Hello, Thank you for coming to my website. My name is Andrew Lagerhausen. I created ceramics for 6 years and decided to learn a new skill, woodworking. I hope to be able to serve you in whatever creative wood idea you want to have come to life.</p>
+                    <p className='favCustText'>Hello, Thank you for coming to my website. My name is Andrew Lagerhausen. I created ceramics for 6 years and decided to learn a new skill, woodworking. I have been doing woodworking for about a year now. I hope to be able to serve you in whatever creative wood idea you want to have come to life.</p>
                 </div>
                 <div className='favoriteProjectSection'>
                     <h2 className='favCustHead' >Favorite Project</h2>

@@ -1,11 +1,25 @@
 import React from 'react';
 import { TextInput, FilePicker, Button } from 'evergreen-ui';
+import emailjs from 'emailjs-com'
 
 const ContactPage = (props) => {
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+    emailjs.sendForm('service_j3hl7w2', 'template_bxvmq23', e.target, 'user_cH5pfppH8MpFh0wT9QdNk')
+        .then((result) => {
+              console.log(result.text);
+        }, (error) => {
+              console.log(error.text);
+        });
+        e.target.reset()
+      }
+
     return(
         <div className="contactFormContainer">
             <h1>Contact Form</h1>
-            <form className="contactForm" action="mailto:lagerhausen.3@gmail.com">
+            <form className="contactForm" onSubmit={sendEmail}>
                 Full Name:
                 <TextInput
                     name="name"

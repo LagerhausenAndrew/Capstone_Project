@@ -8,19 +8,19 @@ const Header = (props) => {
             <header className='mainHeader'>
                 Lager's Lumber Creations
             </header>
-            <nav className='navBar'>
-                <ul>
-                    <li><Link className='link' to='/'><Button height={56} appearance="primary">Home</Button></Link></li>
-                    <li><Link className='link' to='/products'><Button height={56} appearance="primary">Products</Button></Link></li>
-                    <li><Link className='link' to='/blog'><Button height={56} appearance="primary">Blog</Button></Link></li>
-                    <li><Link className='link' to='/contact'><Button height={56} appearance="primary">Contact</Button></Link></li>
+            <div className='navBar'>
+                <ul className='list'>
+                    <div><li><Link className='link' to='/'><Button height={56} appearance="primary">Home</Button></Link></li></div>
+                    <div><li><Link className='link' to='/products'><Button height={56} appearance="primary">Products</Button></Link></li></div>
+                    <div><li><Link className='link' to='/blog'><Button height={56} appearance="primary">Blog</Button></Link></li></div>
+                    <div><li><Link className='link' to='/contact'><Button height={56} appearance="primary">Contact</Button></Link></li></div>
                     {!props.currentUser ?
-                        <li><Link className='link' to='/user'><Button height={56} appearance="primary">Sign Up</Button></Link></li>
+                        <div><li><Link className='link' to='/user'><Button height={56} appearance="primary">Sign Up</Button></Link></li></div>
                         :
-                        <li><Link className='link' to='/user'><Button height={56} appearance="primary">{props.currentUser.name}</Button></Link></li>
+                        <div><li><Link className='link' to='/user'><Button height={56} appearance="primary">{props.currentUser.name}</Button></Link></li></div>
                     }
                 </ul>
-            </nav>
+            </div>
         </div>
     )
 }
