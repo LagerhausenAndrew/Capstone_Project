@@ -64,6 +64,10 @@ class App extends Component {
     this.setState({ currentUser: null })
   }
 
+  componentDidMount = async() => {
+    this.handleVerify();
+  }
+
   render() {
     return (
       <div className="App">

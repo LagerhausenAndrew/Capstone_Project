@@ -18,7 +18,7 @@ const ContactPage = (props) => {
                 />
                 Phone Number:
                 <TextInput
-                    name="name"
+                    name="number"
                     placeholder="Phone Number"
                 />
                 Questions/Comments:
@@ -28,6 +28,7 @@ const ContactPage = (props) => {
                 />
                 Upload File:
                 <FilePicker
+                    name="file"
                     multiple
                     width={250}
                     marginBottom={32}

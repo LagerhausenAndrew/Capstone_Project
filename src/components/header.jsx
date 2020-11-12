@@ -1,4 +1,3 @@
-import { PropertiesIcon } from 'evergreen-ui';
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Button } from 'evergreen-ui'
