@@ -4,7 +4,9 @@ import ProductPage from './product_page';
 const ProductPageContainer = (props) => {
     return(
         <div>
-            <ProductPage currentUser={props.currentUser}/>
+            <ProductPage 
+                currentUser={props.currentUser}
+            />
         </div>
     )
 }

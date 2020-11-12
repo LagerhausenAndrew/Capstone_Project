@@ -1,19 +1,26 @@
 import React from 'react';
-import { ShoppingCartIcon } from 'evergreen-ui'
+import { ShoppingCartIcon, HeartIcon, InfoSignIcon } from 'evergreen-ui'
 
 const ProductPage = (props) => {
     return(
         <div>
             <h1>Product Page</h1>
-            <div>
-            {!props.currentUser ?
-                <h1>You're not logged in</h1>
-                :
-                <div>
-                    <h1>You're logged in</h1>
-                    <ShoppingCartIcon size={40}/>
+            <div className="productCard">  
+                <img className='products' src='/profile_image.jpg' />              
+                <div className='productInfo'>
+                    <p>Price:</p>
+                    <p>Description:</p>
+                    <p>Quantity:</p>
+                    <div>
+                        <HeartIcon size={40}/>
+                        <InfoSignIcon size={40}/>
+                        {!props.currentUser ?
+                            <h1>You're not logged in</h1>
+                        :
+                            <ShoppingCartIcon size={40}/>
+                        }
+                    </div>
                 </div>
-            }
             </div>
         </div>
     )
