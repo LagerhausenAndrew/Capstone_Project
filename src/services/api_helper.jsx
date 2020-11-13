@@ -7,11 +7,13 @@ const api = axios.create({
 
 // ============AUTH============
 export const registerUser = async (registerData) => {
-    const resp = await api.post('/auth/signup' , registerData);
-    console.log(resp);
-    localStorage.setItem('authToken', resp.data.token);
-    api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
-    return resp.data.user;
+    try{
+        const resp = await api.post('/auth/signup' , registerData);
+        console.log(resp);
+        localStorage.setItem('authToken', resp.data.token);
+        api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
+        return resp.data.user; 
+    } catch(err) {console.log(err)}
 }
 
 export const loginUser = async (loginData) => {
