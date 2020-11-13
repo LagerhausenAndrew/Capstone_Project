@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    // baseURL: 'https://secret-sands-89633.herokuapp.com/'
-    baseURL: 'http://localhost:3001'
+    baseURL: 'https://secret-sands-89633.herokuapp.com/'
+    // baseURL: 'http://localhost:3001'
 })
 
 // ============AUTH============
