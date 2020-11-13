@@ -68,6 +68,18 @@ class App extends Component {
     this.handleVerify();
   }
 
+  addToCart = () => {
+    alert('You added this to your cart')
+  }
+
+  vote = () => {
+    alert('You voted for this product')
+  }
+
+  moreInfo = () => {
+    alert('You want more info')
+  }
+
   render() {
     return (
       <div className="App">
@@ -83,6 +95,9 @@ class App extends Component {
             handleSignUp={this.handleSignUp}
             handleLogOut={this.handleLogOut}
             handleLogin={this.handleLogin}
+            addToCart={this.addToCart}
+            vote={this.vote}
+            moreInfo={this.moreInfo}
           />
         </main>
         <footer>

@@ -6,6 +6,9 @@ const ProductPageContainer = (props) => {
         <div>
             <ProductPage 
                 currentUser={props.currentUser}
+                addToCart={props.addToCart}
+                vote={props.vote}
+                moreInfo={props.moreInfo}
             />
         </div>
     )

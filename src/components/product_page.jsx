@@ -12,12 +12,12 @@ const ProductPage = (props) => {
                     <p>Description:</p>
                     <p>Quantity:</p>
                     <div className='productButton'>
-                        <IconButton icon={HeartIcon} height={40}/>
-                        <IconButton icon={InfoSignIcon} height={40}/>
+                        <IconButton icon={HeartIcon} onClick={props.vote} height={40}/>
+                        <IconButton icon={InfoSignIcon} onClick={props.moreInfo} height={40}/>
                         {!props.currentUser ?
                             null
                         :
-                        <IconButton icon={ShoppingCartIcon} height={40}/>
+                        <IconButton icon={ShoppingCartIcon} onClick={props.addToCart} height={40}/>
                         }
                     </div>
                 </div>

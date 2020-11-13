@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Button } from 'evergreen-ui'
+import { Button, Avatar } from 'evergreen-ui'
 
 const Header = (props) => {
     return(
@@ -15,9 +15,9 @@ const Header = (props) => {
                     <div><li><Link className='link' to='/blog'><Button height={56} appearance="primary">Blog</Button></Link></li></div>
                     <div><li><Link className='link' to='/contact'><Button height={56} appearance="primary">Contact</Button></Link></li></div>
                     {!props.currentUser ?
-                        <div><li><Link className='link' to='/user'><Button height={56} appearance="primary">Sign Up</Button></Link></li></div>
+                        <div><li><Link className='link' to='/user'><Button height={56} appearance="primary">Sign Up/LogIn</Button></Link></li></div>
                         :
-                        <div><li><Link className='link' to='/user'><Button height={56} appearance="primary">{props.currentUser.name}</Button></Link></li></div>
+                        <div><li><Link className='avatar' to='/user'><Avatar name={props.currentUser.name} size={40} appearance="primary">{props.currentUser.name}</Avatar></Link></li></div>
                     }
                 </ul>
             </div>
