@@ -1,19 +1,19 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://secret-sands-89633.herokuapp.com/'
-    // baseURL: 'http://localhost:3001'
+    baseURL: 'https://secret-sands-89633.herokuapp.com'
 })
 
 // ============AUTH============
 export const registerUser = async (registerData) => {
+    console.log('in register=================')
     try{
-        const resp = await api.post('/auth/signup' , registerData);
+        const resp = await api.post('/auth/signup', registerData);
         console.log(resp);
         localStorage.setItem('authToken', resp.data.token);
         api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
         return resp.data.user; 
-    } catch(err) {console.log(err)}
+    } catch(err) {console.log('help please========================')}
 }
 
 export const loginUser = async (loginData) => {
