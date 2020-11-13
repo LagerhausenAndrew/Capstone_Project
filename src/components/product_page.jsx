@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingCartIcon, HeartIcon, InfoSignIcon } from 'evergreen-ui'
+import { ShoppingCartIcon, HeartIcon, InfoSignIcon, IconButton } from 'evergreen-ui'
 
 const ProductPage = (props) => {
     return(
@@ -11,13 +11,13 @@ const ProductPage = (props) => {
                     <p>Price:</p>
                     <p>Description:</p>
                     <p>Quantity:</p>
-                    <div>
-                        <HeartIcon size={40}/>
-                        <InfoSignIcon size={40}/>
+                    <div className='productButton'>
+                        <IconButton icon={HeartIcon} height={40}/>
+                        <IconButton icon={InfoSignIcon} height={40}/>
                         {!props.currentUser ?
-                            <h1>You're not logged in</h1>
+                            null
                         :
-                            <ShoppingCartIcon size={40}/>
+                        <IconButton icon={ShoppingCartIcon} height={40}/>
                         }
                     </div>
                 </div>

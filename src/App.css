@@ -159,6 +159,7 @@ input {
 
 .productCard {
   display: flex;
+  align-items: center;
 }
 
 .productInfo {
@@ -166,4 +167,9 @@ input {
   flex-direction: column;
   text-align: left;
   padding: 20px;
+}
+
+.productButton {
+  display: flex;
+  flex-direction: row;
 }
