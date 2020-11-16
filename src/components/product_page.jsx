@@ -21,7 +21,7 @@ const ProductPage = (props) => {
                         {!props.currentUser ?
                             null
                         :
-                        <IconButton icon={ShoppingCartIcon} onClick={props.addToCart} height={40}/>
+                        <IconButton icon={ShoppingCartIcon} onClick={() => props.addToCart((props.products.id)-1)} height={40}/>
                         }
                     </div>
                 </div>

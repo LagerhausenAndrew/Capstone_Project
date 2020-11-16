@@ -2,7 +2,6 @@ import React from 'react';
 import ProductPage from './product_page';
 
 const ProductPageContainer = (props) => {
-    console.log(props.products)
     return(
         <div>
             <h1>Product Page</h1>

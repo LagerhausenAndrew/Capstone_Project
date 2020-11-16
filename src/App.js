@@ -35,7 +35,9 @@ class App extends Component {
             description: "Hail to the Orange, Hail to the Blue. Hail Alma Mater, Ever so true! We love no other, So let our motto be, Victory! Illinois Varsity! This was just a project I worked on in honor to my Alma Mater Illinois."
             }
       ],
-      products: null
+      products: null,
+      cart: [],
+      cartTotal: 0
     }
   }
 
@@ -77,8 +79,25 @@ class App extends Component {
     })
   }
 
-  addToCart = () => {
-    alert('You added this to your cart')
+  addToCart = (id) => {
+    const products = this.state.products
+    const cart = this.state.cart;
+    products[id].qty--
+    cart.push(products[id]);
+    this.setState({
+      products,
+      cart
+    })
+  }
+
+  checkout = () => {
+    const items = this.state.cart;
+    const cartTotal = items.reduce((acc, curr) => {
+      return acc + parseInt(curr.price)
+    }, 0)
+    this.setState({
+      cartTotal
+    })
   }
 
   vote = () => {
@@ -108,6 +127,10 @@ class App extends Component {
             vote={this.vote}
             moreInfo={this.moreInfo}
             products={this.state.products}
+            cart={this.state.cart}
+            checkout={this.checkout} 
+            numCartItems={this.state.cart.length}
+            cartTotal={this.state.cartTotal}
           />
         </main>
         <footer>

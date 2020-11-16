@@ -33,6 +33,10 @@ const OverallContainer = (props) => {
             handleLogOut={props.handleLogOut} 
             handleSignUp={props.handleSignUp} 
             currentUser={props.currentUser}
+            cart={props.cart}
+            checkout={props.checkout} 
+            numCartItems={props.cart.length}
+            cartTotal={props.cartTotal}
           />
         } />
         <Route path="/login" render={() => <Login handleLogin={props.handleLogin}/>} />

@@ -35,8 +35,6 @@ export const verifyUser = async () => {
 }
 
 export const allProducts = async () => {
-    console.log("hey1")
     const resp = await api.get('/product/all');
-    console.log("hey2")
     return resp;
 }
