@@ -18,6 +18,7 @@ const UserPageContainer = (props) => {
                             <UserPage 
                                 handleLogOut={props.handleLogOut}
                                 currentUser={props.currentUser}
+                                removeFromCart={props.removeFromCart}
                                 cart={cart}
                                 key={id}
                             />

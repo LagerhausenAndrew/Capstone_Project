@@ -5,8 +5,8 @@ const UserPage = (props) => {
     return(
         <div className='profile'>
             <div className='cartItems'>
-                <p>{props.cart.name}</p>
-                <IconButton icon={RemoveIcon} className='removeIcon' appearance="primary" intent="danger"height={40}/>
+    <p>{props.cart.name} --- ${props.cart.price}</p>
+                <IconButton icon={RemoveIcon} className='removeIcon' appearance="primary" onClick={props.removeFromCart} intent="danger"height={40}/>
             </div>
         </div>
     )

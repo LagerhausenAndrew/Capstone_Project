@@ -100,6 +100,10 @@ class App extends Component {
     })
   }
 
+  removeFromCart = () => {
+    alert('Are you sure you want to remove this item?')
+  }
+
   vote = () => {
     alert('You voted for this product')
   }
@@ -131,6 +135,7 @@ class App extends Component {
             checkout={this.checkout} 
             numCartItems={this.state.cart.length}
             cartTotal={this.state.cartTotal}
+            removeFromCart={this.removeFromCart}
           />
         </main>
         <footer>
