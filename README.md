@@ -4,28 +4,28 @@
 This capstone project is going to be an E-Commerce website. I have a small side gig of doing woodworking, and when starting this web-dev class I thought it would be incredibly cool to build my very own website for it. 
 
 ## MVP
-* Create a React-App for my E-Commerce Woodworking site.
-* Create Links/Routes to navigate my webpage.
-    * Have a products view page
-    * Link to submit questions/comments
-* Create auth (for login features)
-* Create a shopping cart feature
-    * Allow logged in users to add items to their cart.
+* Create a React-App for my E-Commerce Woodworking site. **Done**
+* Create Links/Routes to navigate my webpage. **Done**
+    * Have a products view page **Done**
+    * Link to submit questions/comments **Done**
+* Create auth (for login features) **Done**
+* Create a shopping cart feature **Done**
+    * Allow logged in users to add items to their cart. **Done**
     * Upon 'Checkout' allow users to submit their 'order' to my email & send the user a confirmation email.
-* Add a syling library
-    * Evergreen UI...?
-* Add a backend database
-    * Auth/Login
-    * Products
+* Add a syling library **Done**
+    * Evergreen UI...? **Done**
+* Add a backend database **Done**
+    * Auth/Login **Done**
+    * Products **Done**
     * Individuals shopping carts
-* Have a file uploader on the contact sheet for people to upload designs they would like to see if I could make
+* Have a file uploader on the contact sheet for people to upload designs they would like to see if I could make **Done**
 
 ## Stretch Goals
 * Add a backend database
     * Add reviews for products
     * Add reviews for the creator
-    * Add the ability to keep track of stock...
-* Have a submit questions button that will send an email to myself.
+    * Add the ability to keep track of stock... **Done-ish**
+* Have a submit questions button that will send an email to myself. **Done**
 * Add a Like button that allows users to upvote a product.
 
 ## ERD
@@ -62,14 +62,21 @@ What do my users what?
 10. As a user I would like to visit a pleseant and appealing website with simple navigation.
 
 ## Code Snippets
+![Homepage1](planning/wireframes/Homepage1.png)
 
 ## Technologies Used
 1. VS Code
+    1. Javascript
+    2. HTML
+    3. CSS
 2. React App
+3. Email JS
+4. Everygreen UI
 
 ## Installation Instructions 
 
-## Issues/Unsolved Problems
+You will need to install axious to have access to my backend.
+You will need to install Everygreen UI
 
 ## Final Thoughts
 
