@@ -62,7 +62,7 @@ What do my users what?
 10. As a user I would like to visit a pleseant and appealing website with simple navigation.
 
 ## Code Snippets
-![Homepage1](planning/wireframes/Homepage1.png)
+![Homepage1](public/Homepage1.png)
 
 ## Technologies Used
 1. VS Code
