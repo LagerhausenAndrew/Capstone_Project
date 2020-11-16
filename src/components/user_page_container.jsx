@@ -33,7 +33,7 @@ const UserPageContainer = (props) => {
                             <Button onClick={props.checkout}>Calculate Total</Button>
                         }  
                         {props.numCartItems > 0 &&      
-                            <Button>Submit Order</Button>  
+                            <Button onClick={props.submitOrder}>Submit Order</Button>  
                         }                     
                     </div>
                         <div>

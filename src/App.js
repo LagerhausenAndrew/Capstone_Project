@@ -100,6 +100,11 @@ class App extends Component {
     })
   }
 
+  submitOrder = () => {
+    alert('Your order has been submited')
+    document.location.reload()
+  }
+
   removeFromCart = () => {
     alert('Are you sure you want to remove this item?')
   }
@@ -136,6 +141,7 @@ class App extends Component {
             numCartItems={this.state.cart.length}
             cartTotal={this.state.cartTotal}
             removeFromCart={this.removeFromCart}
+            submitOrder={this.submitOrder}
           />
         </main>
         <footer>

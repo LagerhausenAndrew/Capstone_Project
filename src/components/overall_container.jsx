@@ -38,6 +38,7 @@ const OverallContainer = (props) => {
             numCartItems={props.cart.length}
             cartTotal={props.cartTotal}
             removeFromCart={props.removeFromCart}
+            submitOrder={props.submitOrder}
           />
         } />
         <Route path="/login" render={() => <Login handleLogin={props.handleLogin}/>} />
