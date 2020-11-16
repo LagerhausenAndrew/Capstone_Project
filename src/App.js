@@ -7,7 +7,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import OverallContainer from './components/overall_container';
 
-import { registerUser, loginUser, verifyUser} from './services/api_helper'
+import { registerUser, loginUser, verifyUser, allProducts} from './services/api_helper'
 
 class App extends Component {
   constructor(props) {
@@ -34,7 +34,8 @@ class App extends Component {
             date: "October 30th, 2020",
             description: "Hail to the Orange, Hail to the Blue. Hail Alma Mater, Ever so true! We love no other, So let our motto be, Victory! Illinois Varsity! This was just a project I worked on in honor to my Alma Mater Illinois."
             }
-      ]
+      ],
+      products: null
     }
   }
 
@@ -65,7 +66,15 @@ class App extends Component {
   }
 
   componentDidMount = async() => {
+    this.allProducts();
     this.handleVerify();
+  }
+
+  allProducts = async() => {
+    const products = await allProducts();
+    this.setState({
+      products: products.data
+    })
   }
 
   addToCart = () => {
@@ -98,6 +107,7 @@ class App extends Component {
             addToCart={this.addToCart}
             vote={this.vote}
             moreInfo={this.moreInfo}
+            products={this.state.products}
           />
         </main>
         <footer>

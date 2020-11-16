@@ -2,14 +2,24 @@ import React from 'react';
 import ProductPage from './product_page';
 
 const ProductPageContainer = (props) => {
+    console.log(props.products)
     return(
         <div>
-            <ProductPage 
-                currentUser={props.currentUser}
-                addToCart={props.addToCart}
-                vote={props.vote}
-                moreInfo={props.moreInfo}
-            />
+            <h1>Product Page</h1>
+            <div className='productPage'>
+                {props.products && props.products.map((products, id) => {
+                    return (
+                        <ProductPage 
+                            products={products}
+                            key={id}
+                            currentUser={props.currentUser}
+                            addToCart={props.addToCart}
+                            vote={props.vote}
+                            moreInfo={props.moreInfo}
+                    />
+                    )
+                })}
+            </div>
         </div>
     )
 }

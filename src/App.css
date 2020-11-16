@@ -160,17 +160,33 @@ input {
 .productCard {
   display: flex;
   align-items: center;
+  border: 2px solid black;
+  padding: 0 5px;
+  margin: 10px;
+  width: 40vw;
+  height: 400px;
 }
 
 .productInfo {
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px;
 }
 
 .productButton {
   display: flex;
   flex-direction: row;
+}
+
+.productPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.outOfStock {
+  color: red;
 }

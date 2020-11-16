@@ -1,12 +1,11 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://secret-sands-89633.herokuapp.com'
+    baseURL: 'http://localhost:3001'
 })
 
 // ============AUTH============
 export const registerUser = async (registerData) => {
-    console.log('in register=================')
     try{
         const resp = await api.post('/auth/signup', registerData);
         console.log(resp);
@@ -33,4 +32,11 @@ export const verifyUser = async () => {
         return resp.data
     }
     return false;
+}
+
+export const allProducts = async () => {
+    console.log("hey1")
+    const resp = await api.get('/product/all');
+    console.log("hey2")
+    return resp;
 }

@@ -30,7 +30,6 @@ class SignUpPage extends Component {
             <form className="signUpForm" onSubmit={(e) => this.props.handleSignUp(e, this.state)}>
                 Name:
                 <TextInput
-                    type="text"
                     name="name"
                     placeholder="Name"
                     value={this.state.name}
@@ -38,7 +37,6 @@ class SignUpPage extends Component {
                 />
                 Email:
                 <TextInput
-                    type="text"
                     name="email"
                     placeholder="Email"
                     value={this.state.email}
@@ -46,7 +44,6 @@ class SignUpPage extends Component {
                 />
                 Username:
                 <TextInput
-                    type="text"
                     name="username"
                     placeholder="Username"
                     value={this.state.username}

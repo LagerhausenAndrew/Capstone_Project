@@ -16,6 +16,7 @@ const OverallContainer = (props) => {
         <Route path="/products" render={() => 
           <ProductPageContainer 
             currentUser={props.currentUser}
+            products={props.products}
             addToCart={props.addToCart}
             vote={props.vote}
             moreInfo={props.moreInfo}
