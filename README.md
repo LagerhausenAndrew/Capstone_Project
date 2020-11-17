@@ -84,3 +84,5 @@ You will need to install Everygreen UI.
 ## Final Thoughts
 
  Thank you for taking the time to read from/use my capstone project. This was an incredible test of my skills gain over the last 12 weeks.
+
+ I was able to get where I am at in this capstone project with the help of the instructors and classmates. I also referenced some labs/homework when I wasn't quite remembering how to do something. 
