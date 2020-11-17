@@ -63,6 +63,7 @@ What do my users what?
 
 ## Code Snippets
 ![Homepage1](public/Homepage1.png)
+![LoggedIn](public/LoggedIn.png)
 
 ## Technologies Used
 1. VS Code
@@ -75,8 +76,10 @@ What do my users what?
 
 ## Installation Instructions 
 
+You will need to clone the github Frontend repo down to your local.
+You will need to clone the github Backend repo down to your local.
 You will need to install axious to have access to my backend.
-You will need to install Everygreen UI
+You will need to install Everygreen UI.
 
 ## Final Thoughts
 
