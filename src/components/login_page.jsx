@@ -33,6 +33,7 @@ class LoginPage extends Component {
                     placeholder="Username"
                     value={this.state.username}
                     onChange={this.handleChange}
+                    required 
                 />
                 <TextInput
                     type="password"
@@ -40,6 +41,7 @@ class LoginPage extends Component {
                     placeholder="Password"
                     value={this.state.password}
                     onChange={this.handleChange}
+                    required
                 />
                 <Button className='button' appearance="primary">Log In</Button>
             </form>
