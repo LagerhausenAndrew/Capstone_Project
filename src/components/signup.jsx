@@ -36,6 +36,7 @@ class SignUpPage extends Component {
                     placeholder="Name"
                     value={this.state.name}
                     onChange={this.handleChange}
+                    required
                 />
                 Email:
                 <TextInput
@@ -43,6 +44,7 @@ class SignUpPage extends Component {
                     placeholder="Email"
                     value={this.state.email}
                     onChange={this.handleChange}
+                    required
                 />
                 Username:
                 <TextInput
@@ -50,6 +52,7 @@ class SignUpPage extends Component {
                     placeholder="Username"
                     value={this.state.username}
                     onChange={this.handleChange}
+                    required
                 />
                 Password:
                 <TextInput
@@ -58,6 +61,7 @@ class SignUpPage extends Component {
                     placeholder="Password"
                     value={this.state.password}
                     onChange={this.handleChange}
+                    required
                 />
                 <Button className='button' appearance="primary">Sign Up</Button>
             </form>
