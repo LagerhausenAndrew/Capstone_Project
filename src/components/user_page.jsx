@@ -1,6 +1,8 @@
 import React from 'react';
 import { IconButton, RemoveIcon, Button } from 'evergreen-ui';
 
+//  This is the User's page for logged in users. It has the shopping cart mapped items.
+
 const UserPage = (props) => {
     return(
         <div className='profile'>

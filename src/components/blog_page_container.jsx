@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogPage from './blog_page';
 
+//  This is the container for the Blog Page
 const BlogPageContainer = (props) => {
 
     return(

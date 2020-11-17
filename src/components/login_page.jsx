@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { TextInput, Button } from 'evergreen-ui';
 
+//  This is the login page.
+//  This is connected to the database
+
 class LoginPage extends Component {
   constructor(props) {
     super(props);

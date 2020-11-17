@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { TextInput, Button } from 'evergreen-ui';
 
+//  This is the signup page for new users
+
 class SignUpPage extends Component {
   constructor(props) {
     super(props);

@@ -1,6 +1,8 @@
 import React from 'react';
 import ProductPage from './product_page';
 
+//  This is the product page container where I map over my data from my backend.
+
 const ProductPageContainer = (props) => {
     return(
         <div>

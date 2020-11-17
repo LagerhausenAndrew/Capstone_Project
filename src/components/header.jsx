@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Button, Avatar } from 'evergreen-ui'
 
+//  This is the header page. Where the links are in the tabs.
+
 const Header = (props) => {
     return(
         <div className='titleBlock'>

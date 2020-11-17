@@ -2,7 +2,11 @@ import React from 'react';
 import { TextInput, FilePicker, Button } from 'evergreen-ui';
 import emailjs from 'emailjs-com'
 
+//  This is the contact page form
+
 const ContactPage = (props) => {
+
+    //  This is the send email function. So after someone hits the submit button on the contact page it will send an email with their info to my email.
 
     function sendEmail(e) {
         e.preventDefault();
@@ -15,6 +19,8 @@ const ContactPage = (props) => {
         });
         e.target.reset()
       }
+
+      // This is the form
 
     return(
         <div className="contactFormContainer">

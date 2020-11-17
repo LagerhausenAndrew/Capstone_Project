@@ -9,6 +9,9 @@ import BlogPageContainer from './blog_page_container';
 import ContactPage from './contact_page';
 import Login from './login_page'
 
+//  This is the main place my App js sends functions and states.
+//  From here I send the right functions and states to the approperiate container.
+
 const OverallContainer = (props) => {
   return (
     <div className='contentBlock'>

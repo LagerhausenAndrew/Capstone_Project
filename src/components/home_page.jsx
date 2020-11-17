@@ -1,5 +1,7 @@
 import React from 'react';
 
+//  This is the homepage that has some static data in it.
+
 const HomePage = (props) => {
     return(
         <div className='homePageContent'>

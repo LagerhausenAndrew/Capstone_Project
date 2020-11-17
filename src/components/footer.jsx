@@ -1,5 +1,7 @@
 import React from 'react';
 
+//  This is the footer page
+
 const Footer = () => {
     return(
         <div className='footerBox'>

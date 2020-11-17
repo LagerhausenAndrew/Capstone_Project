@@ -1,6 +1,8 @@
 import React from 'react';
 import { HeartIcon, IconButton } from 'evergreen-ui'
 
+//  This is the actual Blog page and where the mapped features get dropped.
+
 const BlogPage = (props) => {
     return(
         <div>
