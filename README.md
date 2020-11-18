@@ -29,7 +29,7 @@ https://lagers_lumber_creations.surge.sh/
     * Add reviews for the creator
     * Add the ability to keep track of stock... **Done-ish**
 * Have a submit questions button that will send an email to myself. **Done**
-* Add a Like button that allows users to upvote a product.
+* Add a Like button that allows users to upvote a product. **Done-ish**
 
 ## ERD
 **ERD**
