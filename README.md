@@ -3,6 +3,9 @@
 ## Project Description
 This capstone project is going to be an E-Commerce website. I have a small side gig of doing woodworking, and when starting this web-dev class I thought it would be incredibly cool to build my very own website for it. 
 
+Github Frontend: https://github.com/LagerhausenAndrew/Capstone_Project
+Github Backend: https://github.com/LagerhausenAndrew/Capstone_Project_Database
+
 Click here to see the finished product!
 https://lagers_lumber_creations.surge.sh/
 
