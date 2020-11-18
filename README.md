@@ -14,13 +14,13 @@ https://lagers_lumber_creations.surge.sh/
 * Create auth (for login features) **Done**
 * Create a shopping cart feature **Done**
     * Allow logged in users to add items to their cart. **Done**
-    * Upon 'Checkout' allow users to submit their 'order' to my email & send the user a confirmation email.
+    * Upon 'Checkout' allow users to submit their 'order' **Done**
 * Add a syling library **Done**
     * Evergreen UI...? **Done**
 * Add a backend database **Done**
     * Auth/Login **Done**
     * Products **Done**
-    * Individuals shopping carts
+    * Individuals shopping carts **Done-ish**
 * Have a file uploader on the contact sheet for people to upload designs they would like to see if I could make **Done**
 
 ## Stretch Goals
